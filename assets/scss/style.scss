@@ -1,0 +1,15 @@
+.menu {
+    display: inline-block;
+    padding: 20px;
+    border: 1px solid #000;
+    &__item {
+        padding: 20px 0;
+        padding-left: 20px;
+        border-bottom: 1px solid #000;
+    }
+}
+.style {
+    &__item {
+        margin-bottom: 10px;
+    }
+}

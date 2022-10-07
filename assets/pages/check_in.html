@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/red__white.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="check-in">
+      <div class="top">
+        <button class="exit">
+          <a href="../../index.html"><img src="../images/exit.svg" alt="close" class="exit__img" /></a>
+        </button>
+        <div class="text top__text">Регистрация</div>
+      </div>
+      <form action="#"  class="registration">
+        <div class="welcome text">Добро пожаловать в Eventplace</div>
+        <input
+          class="registration__input"
+          placeholder="Номер телефона"
+          type="tel"
+          name="phone"
+          id=""
+        />
+        <input
+          class="registration__input"
+          placeholder="Электронная почта"
+          type="email"
+          name="email"
+          id=""
+        />
+        <input
+          class="registration__input"
+          placeholder="Пароль"
+          type="password"
+          name="password"
+          id=""
+        />
+        <div class="text text-gray">
+          Мы отправим писмьо, чтобы подтвердить почту.
+        </div>
+        <div class="checkbox">
+          <input
+            type="checkbox"
+            class="checkbox__input"
+            name="em&sms"
+            id="em&sms"
+            value="yes"
+          />
+          <label for="em&sms"
+            >Я хочу получать e-mail и sмs-рассылку с рекомендациями интересных
+            событий, анонсами, новостями, а также информационные
+            сообщения</label
+          >
+        </div>
+        <div class="checkbox">
+          <input
+            type="checkbox"
+            class="checkbox__input"
+            name="confident"
+            id="confident"
+            value="yes"
+          />
+          <label for="confident"
+            ><p>Я ознакомлен и принимаю условия
+              <a class="text-blue" href="#">пользовательского соглашения</a> и
+              <a href="#" class="text-blue">политики конфидециальности</a></label
+            ></p> 
+        </div>
+
+        <button class="submit text" type="submit">Зарегистрироваться</button>
+        <div class="text login">
+          Уже есть аккаунт? <a href="#" class="text-blue">Войти</a> 
+        </div>
+        <button class="log log__google">С помощью Google</button>
+        <button class="log log__facebook">С помощью Facebook</button>
+      </form>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+@import url(../css/reset.css);
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.sign {
+    margin: 120px 0;
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__title {
+        font-size: 48px;
+        line-height: 72px;
+    }
+    &__subtitle {
+        font-size: 36px;
+        line-height: 50px;
+        text-align: center;
+        opacity: 0.8;
+    }
+    &__field {
+        margin: 80px;
+        display: flex;
+        flex-direction: column;
+        padding: 64px;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        &__input {
+            border: 1px solid rgba(0, 0, 0, 0.5);
+            padding: 8px 14px;
+            &::placeholder {
+                font-size: 15px;
+                line-height: 24px;
+                opacity: 0.8;
+            }
+        }
+        &__title {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 36px;
+            margin-bottom: 43px;
+        }
+    }
+    &__wrapper {
+        display: grid;
+        grid-template-areas:
+            "A B"
+            "C C"
+            "D D";
+        gap: 15px;
+        &__box {
+            &-1 {
+                grid-area: A;
+            }
+            &-2 {
+                grid-area: B;
+            }
+            &-3 {
+                grid-area: C;
+            }
+            &-4 {
+                grid-area: D;
+            }
+        }
+    }
+}
+.submit {
+    margin-top: 24px;
+    padding: 11px 34px;
+    background: #18a0fb;
+    border-radius: 6px;
+    transition: opacity .2s;
+    &:active{
+        opacity: 0.8;
+    }
+}
